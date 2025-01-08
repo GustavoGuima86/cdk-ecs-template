@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project
+# A simple CDK + ECS + Load balancer project
 
-This is a blank project for CDK development with TypeScript.
+This is a simple cdk project, for example
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+<img src="Ecs-simple.drawio.png">
+
+- ALB split the requests based on the path
+- Service 1 runs on Fargate
+- Service 2 runs on SC2
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
 * `npx cdk deploy`  deploy this stack to your default AWS account/region
 * `npx cdk diff`    compare deployed stack with current state
 * `npx cdk synth`   emits the synthesized CloudFormation template
